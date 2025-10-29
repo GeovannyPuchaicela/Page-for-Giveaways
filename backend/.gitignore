@@ -1,0 +1,51 @@
+# ==========================
+# PYTHON / FASTAPI PROJECT
+# ==========================
+
+# --- Entorno virtual ---
+venv/
+.env
+.env.*
+
+# --- Compilados de Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Archivos de configuración del IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Archivos de sistema ---
+.DS_Store
+Thumbs.db
+
+# --- Archivos de logs ---
+*.log
+logs/
+*.pid
+
+# --- Archivos temporales ---
+*.tmp
+*.bak
+*.old
+*.orig
+
+# --- Archivos de base de datos locales ---
+*.db
+*.sqlite3
+
+# --- Compilaciones y caches ---
+dist/
+build/
+*.egg-info/
+.eggs/
+.cache/
+pytest_cache/
+.coverage
+htmlcov/
+
+# --- Configuración de Docker (si no usas aún) ---
+docker-compose.override.yml
