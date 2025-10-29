@@ -1,0 +1,35 @@
+:root{
+  --bg:#f4f6f8; --card:#fff; --accent:#2b6cb0; --muted:#6b7280;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, Arial, sans-serif;margin:0;background:var(--bg);color:#111}
+header{padding:1rem 1.25rem;background:var(--card);border-bottom:1px solid #e6e9ee}
+header h1{margin:0;font-size:1.25rem}
+main{display:grid;grid-template-columns:1fr 320px;gap:1rem;padding:1rem}
+section{display:flex;flex-direction:column;gap:1rem}
+.card{background:var(--card);padding:1rem;border-radius:8px;box-shadow:0 1px 2px rgba(0,0,0,0.04)}
+form{display:flex;flex-direction:column;gap:.5rem}
+input, textarea, button{padding:.5rem;border:1px solid #e3e6ee;border-radius:6px}
+textarea{min-height:80px}
+button{background:var(--accent);color:white;border:0;cursor:pointer}
+button:hover{filter:brightness(.95)}
+.result{margin-top:.5rem;padding:.5rem;border-radius:4px;font-size:.9rem}
+.result.success{background:#e6ffe6;color:#006600;border:1px solid #ccffcc}
+.result.error{background:#ffe6e6;color:#cc0000;border:1px solid #ffcccc}
+#giveaway-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.5rem}
+#giveaway-list li{padding:.5rem;border:1px solid #eef2f6;border-radius:6px}
+.giveaway-info{margin-top:.25rem;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+.status-container{display:flex;align-items:center;gap:.5rem}
+.giveaway-actions{margin-top:.5rem;display:flex;flex-direction:column;gap:.5rem}
+.winner-info{padding:.5rem;background:#e6ffe6;border-radius:4px;display:flex;align-items:center;gap:.5rem}
+.winner-label{color:#006600;font-weight:500}
+.draw-btn{background:#4a90e2;color:white;font-weight:500;padding:.5rem 1rem;border:none;border-radius:4px;cursor:pointer}
+.draw-btn:hover{background:#357abd}
+.participate-btn{background:#4CAF50;color:white;font-weight:500;padding:.5rem 1rem;border:none;border-radius:4px;cursor:pointer}
+.participate-btn:hover{background:#45a049}
+.status-info{color:var(--accent);font-weight:500;display:flex;align-items:center;gap:.25rem}
+.status-ended{color:#e74c3c;font-weight:500;display:flex;align-items:center;gap:.25rem}
+.participants-info{color:var(--muted);font-size:0.9em;margin-top:0.25rem}
+aside#debug{height:fit-content}
+.log{font-family:monospace;background:#0f1724;color:#e6eef8;padding:.5rem;border-radius:6px;max-height:220px;overflow:auto}
+footer{padding:1rem;text-align:center;color:var(--muted)}

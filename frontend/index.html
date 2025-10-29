@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GiveHub - Bosquejo Frontend</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>GiveHub — Bosquejo</h1>
+    <p>Interfaz mínima para probar el backend (registro, login, listar/crear giveaways)</p>
+  </header>
+
+  <main>
+    <section id="auth">
+      <div class="card">
+        <h2>Registro</h2>
+        <form id="register-form">
+          <input type="text" id="reg-username" placeholder="Usuario" required />
+          <input type="email" id="reg-email" placeholder="Email" required />
+          <input type="password" id="reg-password" placeholder="Contraseña" required />
+          <button type="submit">Registrar</button>
+        </form>
+        <div id="register-result" class="result"></div>
+      </div>
+
+      <div class="card">
+        <h2>Login</h2>
+        <form id="login-form">
+          <input type="email" id="login-email" placeholder="Email" required />
+          <input type="password" id="login-password" placeholder="Contraseña" required />
+          <button type="submit">Entrar</button>
+        </form>
+        <div id="login-result" class="result"></div>
+      </div>
+    </section>
+
+    <section id="create-giveaway">
+      <div class="card">
+        <h2>Crear Giveaway</h2>
+        <form id="create-form">
+          <input type="text" id="g-title" placeholder="Título" required />
+          <textarea id="g-description" placeholder="Descripción" required></textarea>
+          <input type="text" id="g-prize" placeholder="Premio" required />
+          <input type="url" id="g-image" placeholder="URL de imagen (opcional)" />
+          <input type="datetime-local" id="g-enddate" required />
+          <button type="submit">Crear</button>
+        </form>
+        <div id="create-result" class="result"></div>
+      </div>
+    </section>
+
+    <section id="list-giveaways">
+      <div class="card">
+        <h2>Giveaways</h2>
+        <button id="refresh-list">Refrescar lista</button>
+        <ul id="giveaway-list"></ul>
+      </div>
+    </section>
+
+    <aside class="card" id="debug">
+      <h3>Estado / Debug</h3>
+      <p>Token: <span id="token-display">(no autenticado)</span></p>
+      <p>API base: <code id="api-base">http://127.0.0.1:8080</code></p>
+      <div id="debug-log" class="log"></div>
+    </aside>
+  </main>
+
+  <footer>
+    <small>Bosquejo frontend — no listo para producción.</small>
+  </footer>
+
+  <script src="app.js"></script>
+  <!-- <script src="giveaway-actions.js"></script> -->
+</body>
+</html>

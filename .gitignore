@@ -1,0 +1,25 @@
+# GiveHub Project Root
+
+# --- Python backend ---
+backend/venv/
+backend/__pycache__/
+backend/.env
+
+# --- Node.js frontend ---
+frontend/node_modules/
+frontend/.next/
+frontend/build/
+frontend/dist/
+frontend/.env
+
+# --- Sistema y editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
+# --- Otros ---
+.env
+.env.local
+*.tmp
